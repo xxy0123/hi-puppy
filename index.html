@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>答案之书</title>
+  <style>
+    body {
+      font-family: '微软雅黑', sans-serif;
+      text-align: center;
+      background: #fff0f5;
+      margin-top: 150px;
+    }
+    h1 {
+      font-size: 32px;
+      color: #800080;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="answer">...</h1>
+
+  <script>
+    const answers = [
+      "是的。",
+      "再想一想。",
+      "不值得冒险。",
+      "你已经知道答案了。",
+      "去试试看吧！",
+      "等待更好的时机。",
+      "当然可以。",
+      "命运掌握在你手中。"
+    ];
+    const randomIndex = Math.floor(Math.random() * answers.length);
+    document.getElementById("answer").innerText = answers[randomIndex];
+  </script>
+</body>
+</html>
