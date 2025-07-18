@@ -33,7 +33,7 @@
 
 <!-- --- 核心修改 (2/3): 将加载元素放入一个容器中 --- -->
 <div id="loading-container">
-    <p id="loading-text">等等哦宝宝🥰，猜猜会是什么👀...</p>
+    <p id="loading-text">宝宝🥰，猜猜会是什么👀...</p>
     <img id="loading-gif" src="loading.gif" alt="加载中">
 </div>
     
@@ -69,7 +69,7 @@ async function initializeAndShow() {
         // --- 核心修改 (3/3): 现在只需隐藏整个容器，更整洁 ---
         document.getElementById('loading-container').style.display = 'none';
         showRandomContent();
-    }, 5000); // 5秒延迟
+    }, 4000); // 4秒延迟
 }
 
 function showRandomContent() {
