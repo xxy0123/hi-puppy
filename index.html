@@ -16,13 +16,8 @@
 </head>
 <body>
 
-<p id="loading">等等哦宝宝🥰，猜猜会是什么👀...</p>
-<img id="loading-gif" src="loading.gif" alt="加载中" style="width:80px; height:80px; margin-top:10px;">
-
-#loading-text, #loading-gif {
-    display: block;
-    margin: 0 auto;
-}
+<p id="loading-text">等等哦宝宝🥰，猜猜会是什么👀...</p>
+<img id="loading-gif" src="loading.gif" alt="加载中" style="display:block; margin:10px auto 0; width:80px; height:80px;">
     
 <div id="text-container" class="content-container"><p id="text-answer" class="text-answer"></p></div>
 <div id="image-container" class="content-container"><img id="image-answer" src="" alt="随机图片" class="image-answer"></div>
@@ -70,7 +65,7 @@ async function initializeAndShow() {
     
     // 等待8秒再显示答案内容
     setTimeout(() => {
-        document.getElementById('loading').style.display = 'none';
+        document.getElementById('loading-text').style.display = 'none';
         document.getElementById('loading-gif').style.display = 'none';
         showRandomContent();
     }, 5000);  
