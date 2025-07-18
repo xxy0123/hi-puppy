@@ -61,8 +61,11 @@ async function initializeAndShow() {
         fetchContents('audios')
     ]);
     
-    document.getElementById('loading').style.display = 'none';
-    showRandomContent();
+    // 等待8秒再显示答案内容
+    setTimeout(() => {
+        document.getElementById('loading').style.display = 'none';
+        showRandomContent();
+    }, 8000);  // 8000毫秒 = 8秒
 }
 
 function showRandomContent() {
